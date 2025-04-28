@@ -1,134 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Quiz</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Email Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        .no-data {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-	
-	<button style="position:fixed; top:0;"><a href="https://whatsapp.com/channel/0029Va5CBTIA89Me0BqefE2W">for any problem please click here</a></button><br>
-<!--
-  <a class="buttonglow" href="answer.html" style="--color:#ff1867;">
-    <span></span><span></span><span></span><span></span>Aswer pdf🧾
-  </a>
-  -->
-  <!-- Login Form -->
-  <div id="loginForm">
-    <h2>Student Login</h2>
-    <label for="studentName">Name:</label>
-    <input type="text" id="studentName" required><br><br>
 
-    <label for="studentEmail">Email:</label>
-    <input type="email" id="studentEmail" required><br><br>
-
-    <label for="learnerCode">Village:</label>
-    <input type="text" id="learnerCode" required><br><br>
-
-    <button id="loginButton">Login</button>
-    
-
-  </div>
-
-
-  <!-- Quiz Section -->
-  <div id="quizSection" style="display: none;">
-    <div class="quiz-container">
-      <div class="quiz-header">
-        <h2 id="question">Question will appear here</h2>
-        <div id="timer" class="timer">15</div>
-        <ul>
-          <li>
-            <input type="radio" name="answer" id="a" class="answer" />
-            <label for="a" id="a_text">Answer A</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="b" class="answer" />
-            <label for="b" id="b_text">Answer B</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="c" class="answer" />
-            <label for="c" id="c_text">Answer C</label>
-          </li>
-          <li>
-            <input type="radio" name="answer" id="d" class="answer" />
-            <label for="d" id="d_text">Answer D</label>
-          </li>
-        </ul>
-      </div>
-      <button id="submit">Submit</button>
-    </div>
-  </div>
-
-  <!-- Marksheet Section -->
-  <div id="marksheet" style="display: none;">
-    <h2>Marksheet</h2>
-    <form id="marksheetForm">
-      <label for="marksheetName">Name:</label>
-      <input type="text" id="marksheetName" readonly><br><br>
-
-      <label for="marksheetEmail">Email:</label>
-      <input type="text" id="marksheetEmail" readonly><br><br>
-
-      <label for="marksheetCode">village:</label>
-      <input type="text" id="marksheetCode" readonly><br><br>
-
-      <label for="marksheetScore" style="opacity:0;">Score:</label>
-      <input type="text" id="marksheetScore" readonly style="opacity:0;"><br><br>
-
-      <button id="saveMarksheetButton" type="button">show marksheet</button>
-      <button id="resetButton" type="button" style="opacity:0;">Start New Quiz</button>
+    <h2 style="margin: auto; text-align: center; color: blue;">smart kyp</h2>
+    <h2>Search result by Email</h2>
+    <form id="searchForm">
+        <input type="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Search</button>
     </form>
-  </div>
 
-  <!-- Student Records Table -->
-  <div id="studentRecords" style="display: none; opacity: 0;">
-    <h2 style="color:red;">Result</h2>
-    <table id="studentTable" border="1">
-      <thead>
-        <tr style="color:rgb(123, 255, 0);">
-          <th style="color: #fff;">Name</th>
-          <th style="color: #fff;">Email</th>
-          <th style="color: #fff;">Learner Code</th>
-          <th style="color: #fff;">Score</th>
-        </tr>
-      </thead>
-      <tbody id="studentTableBody" style="color: greenyellow; justify-content: center;">
-        <!-- Student records will be dynamically appended here -->
-      </tbody>
-    </table>
-  </div>
+    <div id="result"></div>
 
-  <script src="script.js"></script>
-  <script>
-    document.getElementById('saveMarksheetButton').addEventListener('click', function () {
-      var name = document.getElementById('marksheetName').value;
-      var email = document.getElementById('marksheetEmail').value;
-      var learnerCode = document.getElementById('marksheetCode').value;
-      var score = document.getElementById('marksheetScore').value;
+    <script>
+        // Data from Excel (example format)
+        const data = [
+  { "Name": "Sandra Kumari", "Email": "san51kypshs@gmail.com", "Village": "Baisadih", "Marks": "13/30" },
+  { "Name": "DHANESH KUMAR", "Email": "dhaneshkumar86780@gmail.com", "Village": "BAISADIH", "Marks": "12/30" },
+  { "Name": "Munmun Bharti", "Email": "munmunbharti90@gmail.com", "Village": "Hasan Bazar", "Marks": "11/30" },
+  { "Name": "Tamanna Kumari", "Email": "uday82947223@gmail.com", "Village": "Pachama", "Marks": "10/30" },
+  { "Name": "Nisha Kumari", "Email": "rajnish565754@gmail.com", "Village": "Pachama", "Marks": "10/30" },
+  { "Name": "Manu Kumar", "Email": "manukypshs@gmail.com", "Village": "Pachma", "Marks": "8/30" },
+  { "Name": "Pragya Kumari", "Email": "pragyakumari199@gmail.com", "Village": "Nonar", "Marks": "9/30" },
+  { "Name": "Khushi Kumari", "Email": "as1902571@gmail.com", "Village": "Nonar", "Marks": "12/30" },
+  { "Name": "Pinki Kumari", "Email": "pinki6g8@gmail.com", "Village": "Nonar", "Marks": "0/30" },
+  { "Name": "Janki Kumari", "Email": "jankikypshs@gmail.com", "Village": "Baisadih", "Marks": "10/30" },
+  { "Name": "Khushi", "Email": "khushi51kyphb@gmail.com", "Village": "Nonar", "Marks": "9/30" },
+  { "Name": "Priya Kumari", "Email": "basmanpursankari@gmail.com", "Village": "Basmanpur", "Marks": "5/30" },
+  { "Name": "Khushi Kumari", "Email": "sudhirupadhyay433@gmail.com", "Village": "Baisadih", "Marks": "5/30" },
+  { "Name": "Nandani Kumari", "Email": "nandhb55@gmail.com", "Village": "Basmanpur", "Marks": "8/30" },
+  { "Name": "Khushi Kumari", "Email": "ramyadav66662591@gmail.com", "Village": "Haradiyan", "Marks": "6/30" },
+  { "Name": "Pratima Kumari", "Email": "raushangupta3108@gmail.com", "Village": "Sahejani", "Marks": "10/30" },
+  { "Name": "Sarita Kumari", "Email": "saritakypsha@gamil.com", "Village": "Pachama", "Marks": "13/30" },
+  { "Name": "Pushpanjali Kumari", "Email": "Pushpanjalik402@gmail.com", "Village": "Hasan Bazar", "Marks": "7/31" },
+  { "Name": "Prashant Kumar", "Email": "cworld853@gmail.com", "Village": "Nonar", "Marks": "19/30" },
+  { "Name": "Amarjeet Kumar", "Email": "Amarjeetkumar@gmail.com", "Village": "Majhiaon", "Marks": "12/30" },
+  { "Name": "Princy Kumari", "Email": "prince8114539964@gmail.com", "Village": "Haradiyan", "Marks": "15/30" },
+  { "Name": "Saloni Kumari", "Email": "Kumaishabnam8077@gmail.com", "Village": "Haradiyan", "Marks": "11/30" },
+  { "Name": "Ravi Ranjan Kumar", "Email": "ramarvin3776o@gmail.com", "Village": "Pachma", "Marks": "6/30" }
+];
 
-      // Data to send
-      var formData = new FormData();
-      formData.append('name', name);
-      formData.append('email', email);
-      formData.append('learnerCode', learnerCode);
-      formData.append('score', score);
 
-      // Sending data to Google Sheets
-      fetch('https://script.google.com/macros/s/AKfycbydA0-XIneVPgkMeasUzjR_bhyiDEL5xyXMsEb_DYN9QVHFEfQiPcrmSElNZwi_rpgM/exec', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.text())
-      .then(data => {
-        alert(data); // Display success message
-        document.getElementById('marksheet').style.display = 'none';
-        document.getElementById('studentRecords').style.display = 'block';
-      })
-      .catch(error => alert('Error saving data: ' + error));
-    });
-  </script>
+
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('emailInput').value.trim().toLowerCase();
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+
+            const filteredData = data.filter(item => item.Email.toLowerCase() === email);
+
+            if (filteredData.length > 0) {
+                const table = document.createElement('table');
+                const headerRow = document.createElement('tr');
+
+                // Create table headers
+                for (let key in filteredData[0]) {
+                    const th = document.createElement('th');
+                    th.innerText = key;
+                    headerRow.appendChild(th);
+                }
+                table.appendChild(headerRow);
+
+                // Create table row
+                filteredData.forEach(item => {
+                    const row = document.createElement('tr');
+                    for (let key in item) {
+                        const td = document.createElement('td');
+                        td.innerText = item[key];
+                        row.appendChild(td);
+                    }
+                    table.appendChild(row);
+                });
+
+                resultDiv.appendChild(table);
+            } else {
+                resultDiv.innerHTML = `<p class="no-data">No data found for this email.</p>`;
+            }
+        });
+    </script>
+
 </body>
 </html>
