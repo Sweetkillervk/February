@@ -1,4 +1,5 @@
 const quizData = 
+
 [
   {
     question: "KYP में कुल कितने सेशन होते हैं?",
@@ -6,7 +7,7 @@ const quizData =
     b: "40",
     c: "120",
     d: "20",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "KYP कोर्स कितने घंटे का होता है?",
@@ -14,7 +15,7 @@ const quizData =
     b: "240",
     c: "80",
     d: "इनमें से कोई नहीं",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "ERA सॉफ्टवेयर किस कंपनी ने बनाया है?",
@@ -22,7 +23,7 @@ const quizData =
     b: "MKCL",
     c: "MCSK",
     d: "ये सभी",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "कीबोर्ड, माउस, डिस्प्ले, और सिस्टम यूनिट क्या हैं?",
@@ -30,7 +31,7 @@ const quizData =
     b: "स्टोरेज डिवाइस",
     c: "आउटपुट डिवाइस",
     d: "सॉफ्टवेयर",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "कंप्यूटर क्या है?",
@@ -38,7 +39,7 @@ const quizData =
     b: "एक आउटपुट डिवाइस",
     c: "एक ऑपरेटिंग सिस्टम",
     d: "एक इलेक्ट्रॉनिक डिवाइस जो डेटा प्रोसेस करता है",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "CIT में कुल कितने सेशन होते हैं?",
@@ -46,7 +47,7 @@ const quizData =
     b: "60",
     c: "80",
     d: "20",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "CIT सेशन के अंत में कितने प्रैक्टिकल प्रश्न होते हैं?",
@@ -54,7 +55,7 @@ const quizData =
     b: "4",
     c: "10",
     d: "15",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "CIS में कितने सेशन होते हैं?",
@@ -62,7 +63,7 @@ const quizData =
     b: "120",
     c: "40",
     d: "60",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "CSS में कितने सेशन होते हैं?",
@@ -70,7 +71,7 @@ const quizData =
     b: "120",
     c: "40",
     d: "60",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "Apple Watch किस प्रकार का कंप्यूटर है?",
@@ -78,7 +79,7 @@ const quizData =
     b: "टैबलेट",
     c: "स्मार्टफोन",
     d: "वियरेबल",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "एक दिन में कितने सेशन कंप्लीट होते हैं?",
@@ -86,7 +87,7 @@ const quizData =
     b: "6",
     c: "2",
     d: "8",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "KYP कोर्स कुल कितने दिनों का होता है?",
@@ -94,7 +95,7 @@ const quizData =
     b: "80",
     c: "90",
     d: "60",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "CIT कितने घंटे का कोर्स है?",
@@ -102,7 +103,7 @@ const quizData =
     b: "120",
     c: "40",
     d: "80",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "CLS कितने घंटे का कोर्स है?",
@@ -110,7 +111,7 @@ const quizData =
     b: "120",
     c: "40",
     d: "80",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "CIT क्लिकर में कितने प्रश्न होते हैं?",
@@ -118,7 +119,7 @@ const quizData =
     b: "6",
     c: "10",
     d: "4",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "KYP कोर्स किस विभाग के अंतर्गत आता है?",
@@ -126,7 +127,7 @@ const quizData =
     b: "शिक्षा विभाग",
     c: "RTPS विभाग",
     d: "ये सभी",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "CPU का पूरा नाम क्या है?",
@@ -134,7 +135,7 @@ const quizData =
     b: "Central Processing Unit",
     c: "Computer Processing Unit",
     d: "Control Processing Unit",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "RAM और ROM में क्या अंतर है?",
@@ -142,7 +143,7 @@ const quizData =
     b: "दोनों स्थायी मेमोरी हैं",
     c: "RAM अस्थायी और ROM स्थायी मेमोरी है",
     d: "RAM स्थायी और ROM अस्थायी मेमोरी है",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "HDD और SSD में क्या अंतर है?",
@@ -150,7 +151,7 @@ const quizData =
     b: "SSD धीमी होती है",
     c: "HDD टिकाऊ होती है",
     d: "SSD तेज़ और टिकाऊ होती है",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "Windows और Linux में क्या अंतर है?",
@@ -158,7 +159,7 @@ const quizData =
     b: "दोनों कम सुरक्षित हैं",
     c: "Windows यूजर-फ्रेंडली है, Linux ओपन-सोर्स है",
     d: "Linux केवल मोबाइल में चलता है",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Notepad किस प्रकार का सॉफ्टवेयर है?",
@@ -166,7 +167,7 @@ const quizData =
     b: "टेक्स्ट एडिटर",
     c: "गेमिंग सॉफ्टवेयर",
     d: "एंटीवायरस",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Ctrl + C किसके लिए उपयोग किया जाता है?",
@@ -174,7 +175,7 @@ const quizData =
     b: "पेस्ट करने के लिए",
     c: "कॉपी करने के लिए",
     d: "सेव करने के लिए",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Ctrl + V का क्या कार्य है?",
@@ -182,7 +183,7 @@ const quizData =
     b: "कॉपी",
     c: "सेव",
     d: "पेस्ट",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "कंप्यूटर का फुल फॉर्म क्या है?",
@@ -190,7 +191,7 @@ const quizData =
     b: "Computer Operating Machine Unit",
     c: "Central Operating Machine Purposely Used for Research",
     d: "कोई आधिकारिक फुल फॉर्म नहीं है",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "Bit और Byte में क्या अंतर है?",
@@ -198,7 +199,7 @@ const quizData =
     b: "1 Byte = 4 Bits",
     c: "Bit छोटी इकाई है और 1 Byte = 8 Bits",
     d: "Bit बड़ी इकाई है",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "मदरबोर्ड क्या होता है?",
@@ -206,7 +207,7 @@ const quizData =
     b: "एक इनपुट डिवाइस",
     c: "कंप्यूटर का बाहरी हिस्सा",
     d: "मुख्य सर्किट बोर्ड",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "BIOS का पूरा नाम क्या है?",
@@ -214,7 +215,7 @@ const quizData =
     b: "Binary Input Output System",
     c: "Basic Input Output System",
     d: "Basic Input Over System",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "USB का पूरा नाम क्या है?",
@@ -222,7 +223,7 @@ const quizData =
     b: "Uniform Serial Bus",
     c: "Unified Serial Bus",
     d: "Universal Serial Bus",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "IP Address क्या होता है?",
@@ -230,7 +231,7 @@ const quizData =
     b: "एक ईमेल आईडी",
     c: "एक यूनिक पहचान संख्या",
     d: "एक पासवर्ड",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Wi-Fi का पूरा नाम क्या है?",
@@ -238,7 +239,7 @@ const quizData =
     b: "Wired Fidelity",
     c: "Wireless Fidelity",
     d: "Wide Frequency",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "LAN और WAN में क्या अंतर है?",
@@ -246,7 +247,7 @@ const quizData =
     b: "LAN बड़ा और WAN छोटा होता है",
     c: "LAN लोकल और WAN बड़ा नेटवर्क होता है",
     d: "दोनों एक जैसे होते हैं",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Firewall क्या होता है?",
@@ -254,7 +255,7 @@ const quizData =
     b: "प्रिंटर",
     c: "नेटवर्क सुरक्षा प्रणाली",
     d: "ऑपरेटिंग सिस्टम",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Cloud Computing क्या है?",
@@ -262,7 +263,7 @@ const quizData =
     b: "इंटरनेट स्टोरेज तकनीक",
     c: "एक ब्राउज़र",
     d: "एक प्रोग्रामिंग लैंग्वेज",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "कंप्यूटर वायरस क्या होता है?",
@@ -270,7 +271,7 @@ const quizData =
     b: "एक हानिकारक प्रोग्राम",
     c: "एक नेटवर्क डिवाइस",
     d: "एक ड्राइवर",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "VPN का पूरा नाम क्या है?",
@@ -278,7 +279,7 @@ const quizData =
     b: "Verified Private Network",
     c: "Virtual Private Network",
     d: "Video Private Network",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Cache Memory क्या होती है?",
@@ -286,7 +287,7 @@ const quizData =
     b: "एक सामान्य स्टोरेज",
     c: "हाई-स्पीड मेमोरी",
     d: "ROM का दूसरा नाम",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Operating System क्या होता है?",
@@ -294,107 +295,114 @@ const quizData =
     b: "एक यूज़र",
     c: "हार्डवेयर",
     d: "हार्डवेयर और यूज़र के बीच इंटरफेस",
-    correct: "D"
+    correct: "d"
   },
   {
-    question: "कंप्यूटर में नेटवर्किंग क्यों आवश्यक है?",
-    a: "इंटरनेट चलाने के लिए",
-    b: "गेम खेलने के लिए",
-    c: "डाटा साझा करने के लिए",
-    d: "फॉर्मेट करने के लिए",
-    correct: "C"
-  },
-  {
-    question: "HTTP और HTTPS में क्या अंतर है?",
-    a: "कोई अंतर नहीं",
-    b: "HTTP सुरक्षित है",
-    c: "HTTPS असुरक्षित है",
-    d: "HTTPS में डेटा एन्क्रिप्ट होता है",
-    correct: "D"
-  },
-  {
-    question: "IP Address के प्रकार कितने होते हैं?",
-    a: "1",
-    b: "2 - IPv4 और IPv6",
-    c: "3",
-    d: "कोई नहीं",
-    correct: "B"
-  },
-  {
-    question: "Router क्या होता है?",
-    a: "इनपुट डिवाइस",
-    b: "आउटपुट डिवाइस",
-    c: "नेटवर्क कनेक्शन काटने वाला",
-    d: "नेटवर्क जोड़ने और डेटा भेजने वाला डिवाइस",
-    correct: "D"
-  },
-  {
-    question: "Compiler क्या होता है?",
-    a: "एक हार्डवेयर",
-    b: "एक ब्राउज़र",
-    c: "एक प्रोग्राम जो कोड को मशीन भाषा में बदलता है",
-    d: "एक वायरस",
-    correct: "C"
-  },
-  {
-    question: "SSD का फुल फॉर्म क्या है?",
-    a: "Solid Soft Drive",
-    b: "Simple System Drive",
-    c: "Solid State Drive",
-    d: "Static Storage Device",
-    correct: "C"
-  },
-  {
-    question: "SMTP का पूरा नाम क्या है?",
-    a: "Simple Mail Text Protocol",
-    b: "Secure Mail Transfer Protocol",
-    c: "Simple Mail Transfer Protocol",
-    d: "Static Mail Transfer Protocol",
-    correct: "C"
-  },
-  {
-    question: "कंप्यूटर में Cache का उपयोग क्यों किया जाता है?",
-    a: "डेटा को फॉर्मेट करने के लिए",
-    b: "स्पीड बढ़ाने के लिए",
-    c: "वायरस हटाने के लिए",
-    d: "बैकअप लेने के लिए",
-    correct: "B"
-  },
-  {
-    question: "Bluetooth क्या है?",
-    a: "एक सॉफ्टवेयर",
-    b: "वायरलेस तकनीक",
-    c: "वायरस",
-    d: "ऑपरेटिंग सिस्टम",
-    correct: "B"
-  },
-  {
-    question: "DNS का पूरा नाम क्या है?",
-    a: "Domain Network System",
-    b: "Data Name System",
-    c: "Domain Name System",
-    d: "Digital Network Server",
-    correct: "C"
-  },
-  {
-    question: "HTML का पूरा नाम क्या है?",
-    a: "HyperText Making Language",
-    b: "HighText Markup Language",
-    c: "HyperText Markup Language",
-    d: "High Transfer Markup Language",
-    correct: "C"
-  },
-  {
-    question: "Backup क्यों आवश्यक है?",
-    a: "वायरस फैलाने के लिए",
-    b: "फॉर्मेटिंग के लिए",
-    c: "डाटा सुरक्षित रखने के लिए",
-    d: "इंटरनेट चलाने के लिए",
-    correct: "C"
-  }
+  question: "Cut करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + C",
+  b: "Ctrl + V",
+  c: "Ctrl + X",
+  d: "Ctrl + Z",
+  correct: "c"
+},
+{
+  question: "Copy करने की शॉर्टकट की क्या होती है?",
+  a: "Ctrl + X",
+  b: "Ctrl + V",
+  c: "Ctrl + C",
+  d: "Ctrl + A",
+  correct: "c"
+},
+{
+  question: "Paste करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + C",
+  b: "Ctrl + V",
+  c: "Ctrl + Z",
+  d: "Ctrl + X",
+  correct: "b"
+},
+{
+  question: "Undo करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + Y",
+  b: "Ctrl + U",
+  c: "Ctrl + A",
+  d: "Ctrl + Z",
+  correct: "d"
+},
+{
+  question: "Select All करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + S",
+  b: "Ctrl + A",
+  c: "Ctrl + D",
+  d: "Ctrl + E",
+  correct: "b"
+},
+{
+  question: "Save करने की शॉर्टकट की क्या होती है?",
+  a: "Ctrl + P",
+  b: "Ctrl + Z",
+  c: "Ctrl + S",
+  d: "Ctrl + X",
+  correct: "c"
+},
+{
+  question: "Print निकालने की शॉर्टकट की क्या है?",
+  a: "Ctrl + S",
+  b: "Ctrl + P",
+  c: "Ctrl + V",
+  d: "Ctrl + D",
+  correct: "b"
+},
+{
+  question: "Redo करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + Z",
+  b: "Ctrl + R",
+  c: "Ctrl + Y",
+  d: "Ctrl + U",
+  correct: "c"
+},
+{
+  question: "नया डॉक्यूमेंट खोलने की शॉर्टकट की क्या है?",
+  a: "Ctrl + O",
+  b: "Ctrl + N",
+  c: "Ctrl + S",
+  d: "Ctrl + A",
+  correct: "b"
+},
+{
+  question: "ओपन फाइल की शॉर्टकट की क्या है?",
+  a: "Ctrl + O",
+  b: "Ctrl + N",
+  c: "Ctrl + P",
+  d: "Ctrl + F",
+  correct: "a"
+},
+{
+  question: "Find करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + G",
+  b: "Ctrl + H",
+  c: "Ctrl + F",
+  d: "Ctrl + D",
+  correct: "c"
+},
+{
+  question: "Bold करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + I",
+  b: "Ctrl + B",
+  c: "Ctrl + U",
+  d: "Ctrl + D",
+  correct: "b"
+},
+{
+  question: "Italic करने की शॉर्टकट की क्या है?",
+  a: "Ctrl + B",
+  b: "Ctrl + U",
+  c: "Ctrl + I",
+  d: "Ctrl + T",
+  correct: "c"
+}
+
 ];
-
-
 // Allowed Learner Codes
 const validLearnerCodes = ["7841", "9298", "9108", "5305", "1747", "3830", "7912", "2719", "2020", "5655", "7929", "7274", "4664", "4130", "2413", "3249", "5836", "9853", "9852"]; // Yahan apne learner codes add karo
 
