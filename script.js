@@ -1,408 +1,337 @@
 const quizData = 
-
 [
+  
   {
-    question: "KYP में कुल कितने सेशन होते हैं?",
-    a: "60",
-    b: "40",
-    c: "120",
-    d: "20",
-    correct: "c"
+    question: "MS Word किस प्रकार का सॉफ्टवेयर है?",
+    a: "सिस्टम सॉफ्टवेयर",
+    b: "ऑपरेटिंग सिस्टम",
+    c: "एप्लिकेशन सॉफ्टवेयर",
+    d: "गेमिंग सॉफ्टवेयर",
+    correct: "C"
   },
   {
-    question: "KYP कोर्स कितने घंटे का होता है?",
-    a: "120",
-    b: "240",
-    c: "80",
-    d: "इनमें से कोई नहीं",
-    correct: "b"
+    question: "Home Tab में 'Bold' का शॉर्टकट क्या है?",
+    a: "Ctrl + I",
+    b: "Ctrl + U",
+    c: "Ctrl + B",
+    d: "Ctrl + L",
+    correct: "C"
   },
   {
-    question: "ERA सॉफ्टवेयर किस कंपनी ने बनाया है?",
-    a: "BSDM",
-    b: "MKCL",
-    c: "MCSK",
-    d: "ये सभी",
-    correct: "b"
+    question: "MS Word में टेक्स्ट को इटैलिक करने का शॉर्टकट क्या है?",
+    a: "Ctrl + B",
+    b: "Ctrl + I",
+    c: "Ctrl + U",
+    d: "Ctrl + E",
+    correct: "B"
   },
   {
-    question: "कीबोर्ड, माउस, डिस्प्ले, और सिस्टम यूनिट क्या हैं?",
-    a: "हार्डवेयर",
-    b: "स्टोरेज डिवाइस",
-    c: "आउटपुट डिवाइस",
-    d: "सॉफ्टवेयर",
-    correct: "a"
+    question: "'Justify' alignment किस शॉर्टकट से होता है?",
+    a: "Ctrl + R",
+    b: "Ctrl + E",
+    c: "Ctrl + J",
+    d: "Ctrl + L",
+    correct: "C"
   },
   {
-    question: "कंप्यूटर क्या है?",
-    a: "एक इनपुट डिवाइस",
-    b: "एक आउटपुट डिवाइस",
-    c: "एक ऑपरेटिंग सिस्टम",
-    d: "एक इलेक्ट्रॉनिक डिवाइस जो डेटा प्रोसेस करता है",
-    correct: "d"
+    question: "Home Tab में कौन-सा ग्रुप फॉन्ट साइज़ को नियंत्रित करता है?",
+    a: "Styles",
+    b: "Paragraph",
+    c: "Clipboard",
+    d: "Font",
+    correct: "D"
   },
   {
-    question: "CIT में कुल कितने सेशन होते हैं?",
-    a: "120",
-    b: "60",
-    c: "80",
-    d: "20",
-    correct: "b"
+    question: "Bullets किस ग्रुप में पाए जाते हैं?",
+    a: "Clipboard",
+    b: "Paragraph",
+    c: "Font",
+    d: "Editing",
+    correct: "B"
   },
   {
-    question: "CIT सेशन के अंत में कितने प्रैक्टिकल प्रश्न होते हैं?",
-    a: "5",
-    b: "4",
-    c: "10",
-    d: "15",
-    correct: "b"
+    question: "Underline करने का शॉर्टकट क्या है?",
+    a: "Ctrl + B",
+    b: "Ctrl + I",
+    c: "Ctrl + U",
+    d: "Ctrl + T",
+    correct: "C"
   },
   {
-    question: "CIS में कितने सेशन होते हैं?",
-    a: "20",
-    b: "120",
-    c: "40",
-    d: "60",
-    correct: "c"
+    question: "Text को Highlight करने का विकल्प किस ग्रुप में होता है?",
+    a: "Font",
+    b: "Paragraph",
+    c: "Editing",
+    d: "Styles",
+    correct: "A"
   },
   {
-    question: "CSS में कितने सेशन होते हैं?",
-    a: "20",
-    b: "120",
-    c: "40",
-    d: "60",
-    correct: "a"
+    question: "'Cut' करने का शॉर्टकट क्या है?",
+    a: "Ctrl + C",
+    b: "Ctrl + V",
+    c: "Ctrl + X",
+    d: "Ctrl + Z",
+    correct: "C"
   },
   {
-    question: "Apple Watch किस प्रकार का कंप्यूटर है?",
-    a: "लैपटॉप",
-    b: "टैबलेट",
-    c: "स्मार्टफोन",
-    d: "वियरेबल",
-    correct: "d"
+    question: "Home Tab में 'Styles' का मुख्य उद्देश्य क्या है?",
+    a: "Clipboard मैनेज करना",
+    b: "Text formatting",
+    c: "Formatting consistency",
+    d: "Undo और Redo करना",
+    correct: "C"
   },
   {
-    question: "एक दिन में कितने सेशन कंप्लीट होते हैं?",
-    a: "4",
-    b: "6",
-    c: "2",
-    d: "8",
-    correct: "c"
+    question: "Text को 'Center Align' करने के लिए किस शॉर्टकट का प्रयोग होता है?",
+    a: "Ctrl + C",
+    b: "Ctrl + E",
+    c: "Ctrl + L",
+    d: "Ctrl + R",
+    correct: "B"
   },
   {
-    question: "KYP कोर्स कुल कितने दिनों का होता है?",
-    a: "120",
-    b: "80",
-    c: "90",
-    d: "60",
-    correct: "c"
+    question: "Copy करने के लिए शॉर्टकट क्या है?",
+    a: "Ctrl + X",
+    b: "Ctrl + C",
+    c: "Ctrl + V",
+    d: "Ctrl + Z",
+    correct: "B"
   },
   {
-    question: "CIT कितने घंटे का कोर्स है?",
-    a: "60",
-    b: "120",
-    c: "40",
-    d: "80",
-    correct: "b"
+    question: "Redo करने का शॉर्टकट क्या है?",
+    a: "Ctrl + Z",
+    b: "Ctrl + Y",
+    c: "Ctrl + R",
+    d: "Ctrl + T",
+    correct: "B"
   },
   {
-    question: "CLS कितने घंटे का कोर्स है?",
-    a: "60",
-    b: "120",
-    c: "40",
-    d: "80",
-    correct: "d"
+    question: "Text का रंग बदलने का विकल्प कहाँ होता है?",
+    a: "Paragraph",
+    b: "Font",
+    c: "Styles",
+    d: "Editing",
+    correct: "B"
   },
   {
-    question: "CIT क्लिकर में कितने प्रश्न होते हैं?",
-    a: "5",
-    b: "6",
-    c: "10",
-    d: "4",
-    correct: "a"
+    question: "Clipboard में कुल कितने आइटम स्टोर हो सकते हैं?",
+    a: "12",
+    b: "24",
+    c: "36",
+    d: "48",
+    correct: "B"
   },
   {
-    question: "KYP कोर्स किस विभाग के अंतर्गत आता है?",
-    a: "श्रम विभाग",
-    b: "शिक्षा विभाग",
-    c: "RTPS विभाग",
-    d: "ये सभी",
-    correct: "a"
+    question: "Text को 'Left Align' करने का शॉर्टकट क्या है?",
+    a: "Ctrl + R",
+    b: "Ctrl + L",
+    c: "Ctrl + E",
+    d: "Ctrl + J",
+    correct: "B"
   },
   {
-    question: "CPU का पूरा नाम क्या है?",
-    a: "Central Program Unit",
-    b: "Central Processing Unit",
-    c: "Computer Processing Unit",
-    d: "Control Processing Unit",
-    correct: "b"
+    question: "Insert Tab में किस विकल्प से चित्र जोड़ा जाता है?",
+    a: "Table",
+    b: "Picture",
+    c: "Shapes",
+    d: "WordArt",
+    correct: "B"
   },
   {
-    question: "RAM और ROM में क्या अंतर है?",
-    a: "दोनों अस्थायी मेमोरी हैं",
-    b: "दोनों स्थायी मेमोरी हैं",
-    c: "RAM अस्थायी और ROM स्थायी मेमोरी है",
-    d: "RAM स्थायी और ROM अस्थायी मेमोरी है",
-    correct: "c"
+    question: "Insert Tab में Page Number जोड़ने का विकल्प कहाँ होता है?",
+    a: "Header & Footer",
+    b: "Symbols",
+    c: "Illustrations",
+    d: "Pages",
+    correct: "A"
   },
   {
-    question: "HDD और SSD में क्या अंतर है?",
-    a: "HDD तेज़ होती है",
-    b: "SSD धीमी होती है",
-    c: "HDD टिकाऊ होती है",
-    d: "SSD तेज़ और टिकाऊ होती है",
-    correct: "d"
+    question: "Header और Footer Insert Tab के किस ग्रुप में आते हैं?",
+    a: "Pages",
+    b: "Tables",
+    c: "Text",
+    d: "Header & Footer",
+    correct: "D"
   },
   {
-    question: "Windows और Linux में क्या अंतर है?",
-    a: "दोनों ओपन-सोर्स हैं",
-    b: "दोनों कम सुरक्षित हैं",
-    c: "Windows यूजर-फ्रेंडली है, Linux ओपन-सोर्स है",
-    d: "Linux केवल मोबाइल में चलता है",
-    correct: "c"
+    question: "Insert Tab में कौन-सा विकल्प SmartArt जोड़ने के लिए होता है?",
+    a: "Tables",
+    b: "Illustrations",
+    c: "Text",
+    d: "Links",
+    correct: "B"
   },
   {
-    question: "Notepad किस प्रकार का सॉफ्टवेयर है?",
-    a: "ब्राउज़र",
-    b: "टेक्स्ट एडिटर",
-    c: "गेमिंग सॉफ्टवेयर",
-    d: "एंटीवायरस",
-    correct: "b"
+    question: "WordArt Insert करने का विकल्प किस ग्रुप में है?",
+    a: "Media",
+    b: "Symbols",
+    c: "Text",
+    d: "Links",
+    correct: "C"
   },
   {
-    question: "Ctrl + C किसके लिए उपयोग किया जाता है?",
-    a: "कट करने के लिए",
-    b: "पेस्ट करने के लिए",
-    c: "कॉपी करने के लिए",
-    d: "सेव करने के लिए",
-    correct: "c"
+    question: "Hyperlink जोड़ने का विकल्प कौन-सा है?",
+    a: "Text",
+    b: "Links",
+    c: "Tables",
+    d: "Media",
+    correct: "B"
   },
   {
-    question: "Ctrl + V का क्या कार्य है?",
-    a: "कट",
-    b: "कॉपी",
-    c: "सेव",
-    d: "पेस्ट",
-    correct: "d"
+    question: "Bookmark जोड़ने का विकल्प कहाँ होता है?",
+    a: "Tables",
+    b: "Links",
+    c: "Media",
+    d: "Text",
+    correct: "B"
   },
   {
-    question: "कंप्यूटर का फुल फॉर्म क्या है?",
-    a: "Common Operating Machine Used for Technical and Educational Research",
-    b: "Computer Operating Machine Unit",
-    c: "Central Operating Machine Purposely Used for Research",
-    d: "कोई आधिकारिक फुल फॉर्म नहीं है",
-    correct: "d"
+    question: "Cover Page किस ग्रुप में पाया जाता है?",
+    a: "Pages",
+    b: "Tables",
+    c: "Text",
+    d: "Media",
+    correct: "A"
   },
   {
-    question: "Bit और Byte में क्या अंतर है?",
-    a: "दोनों बराबर होते हैं",
-    b: "1 Byte = 4 Bits",
-    c: "Bit छोटी इकाई है और 1 Byte = 8 Bits",
-    d: "Bit बड़ी इकाई है",
-    correct: "c"
+    question: "Shapes Insert करने के लिए किस ग्रुप का उपयोग होता है?",
+    a: "Illustrations",
+    b: "Text",
+    c: "Tables",
+    d: "Pages",
+    correct: "A"
   },
   {
-    question: "मदरबोर्ड क्या होता है?",
-    a: "एक प्रकार का कीबोर्ड",
-    b: "एक इनपुट डिवाइस",
-    c: "कंप्यूटर का बाहरी हिस्सा",
-    d: "मुख्य सर्किट बोर्ड",
-    correct: "d"
+    question: "Table Insert करने का विकल्प कहाँ होता है?",
+    a: "Pages",
+    b: "Tables",
+    c: "Illustrations",
+    d: "Text",
+    correct: "B"
   },
   {
-    question: "BIOS का पूरा नाम क्या है?",
-    a: "Basic Integrated Output System",
-    b: "Binary Input Output System",
-    c: "Basic Input Output System",
-    d: "Basic Input Over System",
-    correct: "c"
+    question: "Insert Tab में 'Equation' और 'Symbol' किस ग्रुप में होते हैं?",
+    a: "Text",
+    b: "Symbols",
+    c: "Media",
+    d: "Links",
+    correct: "B"
   },
   {
-    question: "USB का पूरा नाम क्या है?",
-    a: "Universal System Bus",
-    b: "Uniform Serial Bus",
-    c: "Unified Serial Bus",
-    d: "Universal Serial Bus",
-    correct: "d"
+    question: "Online Pictures जोड़ने का विकल्प कहाँ होता है?",
+    a: "Illustrations",
+    b: "Links",
+    c: "Text",
+    d: "Pages",
+    correct: "A"
   },
   {
-    question: "IP Address क्या होता है?",
-    a: "एक वेबसाइट",
-    b: "एक ईमेल आईडी",
-    c: "एक यूनिक पहचान संख्या",
-    d: "एक पासवर्ड",
-    correct: "c"
+    question: "Insert Tab में किस ग्रुप में Chart जोड़ा जाता है?",
+    a: "Illustrations",
+    b: "Text",
+    c: "Media",
+    d: "Tables",
+    correct: "A"
   },
   {
-    question: "Wi-Fi का पूरा नाम क्या है?",
-    a: "Wireless Finder",
-    b: "Wired Fidelity",
-    c: "Wireless Fidelity",
-    d: "Wide Frequency",
-    correct: "c"
+    question: "Insert Tab में Screenshot जोड़ने का विकल्प होता है:",
+    a: "Text",
+    b: "Tables",
+    c: "Illustrations",
+    d: "Media",
+    correct: "C"
   },
   {
-    question: "LAN और WAN में क्या अंतर है?",
-    a: "दोनों लोकल नेटवर्क हैं",
-    b: "LAN बड़ा और WAN छोटा होता है",
-    c: "LAN लोकल और WAN बड़ा नेटवर्क होता है",
-    d: "दोनों एक जैसे होते हैं",
-    correct: "c"
+    question: "Insert Tab में Video Insert करने का विकल्प किसमें होता है?",
+    a: "Media",
+    b: "Text",
+    c: "Pages",
+    d: "Illustrations",
+    correct: "A"
   },
   {
-    question: "Firewall क्या होता है?",
-    a: "डाटा स्टोरेज डिवाइस",
-    b: "प्रिंटर",
-    c: "नेटवर्क सुरक्षा प्रणाली",
-    d: "ऑपरेटिंग सिस्टम",
-    correct: "c"
+    question: "File Tab का मुख्य कार्य क्या है?",
+    a: "Formatting",
+    b: "Document प्रबंधन",
+    c: "Spelling Check",
+    d: "Table जोड़ना",
+    correct: "B"
   },
   {
-    question: "Cloud Computing क्या है?",
-    a: "एक गेम",
-    b: "इंटरनेट स्टोरेज तकनीक",
-    c: "एक ब्राउज़र",
-    d: "एक प्रोग्रामिंग लैंग्वेज",
-    correct: "b"
+    question: "File Tab में 'Save As' का कार्य क्या है?",
+    a: "पुराने फाइल को खोलना",
+    b: "फाइल को नए नाम से सेव करना",
+    c: "फाइल डिलीट करना",
+    d: "फॉर्मेटिंग करना",
+    correct: "B"
   },
   {
-    question: "कंप्यूटर वायरस क्या होता है?",
-    a: "एंटीवायरस प्रोग्राम",
-    b: "एक हानिकारक प्रोग्राम",
-    c: "एक नेटवर्क डिवाइस",
-    d: "एक ड्राइवर",
-    correct: "b"
+    question: "File Tab में 'Print' का कार्य क्या है?",
+    a: "Document delete",
+    b: "Document preview",
+    c: "Document को प्रिंट करना",
+    d: "फॉर्मेटिंग करना",
+    correct: "C"
   },
   {
-    question: "VPN का पूरा नाम क्या है?",
-    a: "Virtual Process Network",
-    b: "Verified Private Network",
-    c: "Virtual Private Network",
-    d: "Video Private Network",
-    correct: "c"
+    question: "File Tab में कौन-सा विकल्प हाल ही में खुले Documents को दिखाता है?",
+    a: "Save",
+    b: "Open",
+    c: "Info",
+    d: "Recent",
+    correct: "D"
   },
   {
-    question: "Cache Memory क्या होती है?",
-    a: "एक आउटपुट डिवाइस",
-    b: "एक सामान्य स्टोरेज",
-    c: "हाई-स्पीड मेमोरी",
-    d: "ROM का दूसरा नाम",
-    correct: "c"
+    question: "File Tab में 'New' का उपयोग होता है:",
+    a: "फॉर्मेट बदलने के लिए",
+    b: "नया Document बनाने के लिए",
+    c: "Text को Delete करने के लिए",
+    d: "फाइल को बंद करने के लिए",
+    correct: "B"
   },
   {
-    question: "Operating System क्या होता है?",
-    a: "हार्ड डिस्क",
-    b: "एक यूज़र",
-    c: "हार्डवेयर",
-    d: "हार्डवेयर और यूज़र के बीच इंटरफेस",
-    correct: "d"
+    question: "MS Word में फाइल को PDF में सेव करने के लिए कौन-सा विकल्प चुनते हैं?",
+    a: "Export",
+    b: "Share",
+    c: "Save",
+    d: "Info",
+    correct: "A"
   },
   {
-  question: "Cut करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + C",
-  b: "Ctrl + V",
-  c: "Ctrl + X",
-  d: "Ctrl + Z",
-  correct: "c"
-},
-{
-  question: "Copy करने की शॉर्टकट की क्या होती है?",
-  a: "Ctrl + X",
-  b: "Ctrl + V",
-  c: "Ctrl + C",
-  d: "Ctrl + A",
-  correct: "c"
-},
-{
-  question: "Paste करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + C",
-  b: "Ctrl + V",
-  c: "Ctrl + Z",
-  d: "Ctrl + X",
-  correct: "b"
-},
-{
-  question: "Undo करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + Y",
-  b: "Ctrl + U",
-  c: "Ctrl + A",
-  d: "Ctrl + Z",
-  correct: "d"
-},
-{
-  question: "Select All करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + S",
-  b: "Ctrl + A",
-  c: "Ctrl + D",
-  d: "Ctrl + E",
-  correct: "b"
-},
-{
-  question: "Save करने की शॉर्टकट की क्या होती है?",
-  a: "Ctrl + P",
-  b: "Ctrl + Z",
-  c: "Ctrl + S",
-  d: "Ctrl + X",
-  correct: "c"
-},
-{
-  question: "Print निकालने की शॉर्टकट की क्या है?",
-  a: "Ctrl + S",
-  b: "Ctrl + P",
-  c: "Ctrl + V",
-  d: "Ctrl + D",
-  correct: "b"
-},
-{
-  question: "Redo करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + Z",
-  b: "Ctrl + R",
-  c: "Ctrl + Y",
-  d: "Ctrl + U",
-  correct: "c"
-},
-{
-  question: "नया डॉक्यूमेंट खोलने की शॉर्टकट की क्या है?",
-  a: "Ctrl + O",
-  b: "Ctrl + N",
-  c: "Ctrl + S",
-  d: "Ctrl + A",
-  correct: "b"
-},
-{
-  question: "ओपन फाइल की शॉर्टकट की क्या है?",
-  a: "Ctrl + O",
-  b: "Ctrl + N",
-  c: "Ctrl + P",
-  d: "Ctrl + F",
-  correct: "a"
-},
-{
-  question: "Find करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + G",
-  b: "Ctrl + H",
-  c: "Ctrl + F",
-  d: "Ctrl + D",
-  correct: "c"
-},
-{
-  question: "Bold करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + I",
-  b: "Ctrl + B",
-  c: "Ctrl + U",
-  d: "Ctrl + D",
-  correct: "b"
-},
-{
-  question: "Italic करने की शॉर्टकट की क्या है?",
-  a: "Ctrl + B",
-  b: "Ctrl + U",
-  c: "Ctrl + I",
-  d: "Ctrl + T",
-  correct: "c"
-}
-
+    question: "File Tab में 'Info' विकल्प किसके लिए उपयोग होता है?",
+    a: "Table Info दिखाने के लिए",
+    b: "File Properties और Permissions के लिए",
+    c: "Formatting के लिए",
+    d: "Text Input के लिए",
+    correct: "B"
+  },
+  {
+    question: "File Tab में 'Options' का उपयोग किसलिए होता है?",
+    a: "Text Styling",
+    b: "Word Settings को बदलने के लिए",
+    c: "Insert Image",
+    d: "Hyperlink बनाने के लिए",
+    correct: "B"
+  },
+  {
+    question: "File Tab में फाइल को क्लाउड में सेव करने का विकल्प क्या है?",
+    a: "Export",
+    b: "Share",
+    c: "Save As",
+    d: "Open",
+    correct: "B"
+  },
+  {
+    question: "MS Word को बंद करने का विकल्प कहाँ होता है?",
+    a: "File > Close",
+    b: "Home > Exit",
+    c: "View > Quit",
+    d: "Insert > Remove",
+    correct: "A"
+  }
 ];
+
+
 // Allowed Learner Codes
 const validLearnerCodes = ["7841", "9298", "9108", "5305", "1747", "3830", "7912", "2719", "2020", "5655", "7929", "7274", "4664", "4130", "2413", "3249", "5836", "9853", "9852"]; // Yahan apne learner codes add karo
 

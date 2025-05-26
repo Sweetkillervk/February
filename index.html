@@ -1,140 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Email + PIN Search</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f5f5f5;
-        }
-        h2 {
-            color: #333;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        input {
-            padding: 10px;
-            margin-right: 10px;
-            width: 250px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            background-color: white;
-            margin-top: 20px;
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-        .no-data {
-            color: red;
-        }
-        .highlight {
-            background-color: #d1ffd1;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	
+	<button style="position:fixed; top:0;"><a href="https://whatsapp.com/channel/0029Va5CBTIA89Me0BqefE2W">for any problem please click here</a></button><br>
+<!--
+  <a class="buttonglow" href="answer.html" style="--color:#ff1867;">
+    <span></span><span></span><span></span><span></span>Aswer pdf🧾
+  </a>
+  -->
+  <!-- Login Form -->
+  <div id="loginForm">
+    <h2>Student Login</h2>
+    <label for="studentName">Name:</label>
+    <input type="text" id="studentName" required><br><br>
 
-    <h2 style="text-align: center; color: blue;">SMART KYP - Result Search</h2>
-    <h3>Search Result by Email & PIN</h3>
+    <label for="studentEmail">Email:</label>
+    <input type="email" id="studentEmail" required><br><br>
 
-    <form id="searchForm">
-        <input type="email" id="emailInput" placeholder="Enter your email" required>
-        <input type="text" id="pinInput" placeholder="Enter 4-digit PIN" required pattern="\d{4}">
-        <button type="submit">Search</button>
-    </form>
+    <label for="learnerCode">Learner pin:</label>
+    <input type="text" id="learnerCode" required><br><br>
 
-    <div id="top3Container">
-        <h3>🏆 Top 3 Students</h3>
-        <div id="top3"></div>
+    <button id="loginButton">Login</button>
+    
+
+  </div>
+
+  <!-- Quiz Section -->
+  <div id="quizSection" style="display: none;">
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h2 id="question">Question will appear here</h2>
+        <div id="timer" class="timer">15</div>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Answer A</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Answer B</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Answer C</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Answer D</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
     </div>
+  </div>
 
-    <div id="result"></div>
+  <!-- Marksheet Section -->
+  <div id="marksheet" style="display: none;">
+    <h2>Marksheet</h2>
+    <form id="marksheetForm">
+      <label for="marksheetName">Name:</label>
+      <input type="text" id="marksheetName" readonly><br><br>
 
-    <script>
-        const data = [
-            { "Name": "Krishna Kumar", "Email": "krishnakumar02894@gmail.com", "PIN": "3249", "Marks": "32" },
-            { "Name": "Pradum kumar", "Email": "panditlala636@gmail.com", "PIN": "7841", "Marks": "22" },
-            { "Name": "Vinay Kumar", "Email": "VK109383@GMAIL.COM", "PIN": "5836", "Marks": "24" },
-            { "Name": "Priyanshu kumar", "Email": "prkirhi2007@gmail.com", "PIN": "5655", "Marks": "18" },
-            { "Name": "Badak kumar", "Email": "badakk080@gmail.com", "PIN": "3830", "Marks": "17" },
-            { "Name": "ANSHU KUMAR", "Email": "a99987732@gmail.com", "PIN": "9298", "Marks": "16" },
-            { "Name": "Sumit Kumar", "Email": "s3252904@gmail.com", "PIN": "7912", "Marks": "22" },
-            { "Name": "BHARAT Kumar soni", "Email": "bharatraj1355@gmail.com", "PIN": "4130", "Marks": "18" },
-            { "Name": "Ranjankumar", "Email": "ranjankumarsoni7080@gmail.com", "PIN": "9108", "Marks": "14" }
-        ];
+      <label for="marksheetEmail">Email:</label>
+      <input type="text" id="marksheetEmail" readonly><br><br>
 
-        // Show top 3 on page load
-        const top3Div = document.getElementById("top3");
-        const top3 = [...data].sort((a, b) => parseInt(b.Marks) - parseInt(a.Marks)).slice(0, 3);
-        const top3Table = createTable(top3);
-        top3Div.appendChild(top3Table);
+      <label for="marksheetCode">Learnew pin:</label>
+      <input type="text" id="marksheetCode" readonly><br><br>
 
-        document.getElementById('searchForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('emailInput').value.trim().toLowerCase();
-            const pin = document.getElementById('pinInput').value.trim();
-            const resultDiv = document.getElementById('result');
-            resultDiv.innerHTML = '';
+      <label for="marksheetScore" style="opacity:0;">Score:</label>
+      <input type="text" id="marksheetScore" readonly style="opacity:0;"><br><br>
 
-            const filteredData = data.filter(item =>
-                item.Email.toLowerCase() === email && item.PIN === pin
-            );
+      <button id="saveMarksheetButton" type="button">show marksheet</button>
+      <button id="resetButton" type="button" style="opacity:0;">Start New Quiz</button>
+    </form>
+  </div>
 
-            if (filteredData.length > 0) {
-                const table = createTable(filteredData);
-                resultDiv.appendChild(table);
-            } else {
-                resultDiv.innerHTML = `<p class="no-data">No matching record found for this Email and PIN.</p>`;
-            }
-        });
+  <!-- Student Records Table -->
+  <div id="studentRecords" style="display: none; opacity: 0;">
+    <h2 style="color:red;">Result</h2>
+    <table id="studentTable" border="1">
+      <thead>
+        <tr style="color:rgb(123, 255, 0);">
+          <th style="color: #fff;">Name</th>
+          <th style="color: #fff;">Email</th>
+          <th style="color: #fff;">Learner Code</th>
+          <th style="color: #fff;">Score</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody" style="color: greenyellow; justify-content: center;">
+        <!-- Student records will be dynamically appended here -->
+      </tbody>
+    </table>
+  </div>
 
-        function createTable(dataSet) {
-            const table = document.createElement('table');
-            const headerRow = document.createElement('tr');
-            for (let key in dataSet[0]) {
-                const th = document.createElement('th');
-                th.innerText = key;
-                headerRow.appendChild(th);
-            }
-            table.appendChild(headerRow);
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('saveMarksheetButton').addEventListener('click', function () {
+      var name = document.getElementById('marksheetName').value;
+      var email = document.getElementById('marksheetEmail').value;
+      var learnerCode = document.getElementById('marksheetCode').value;
+      var score = document.getElementById('marksheetScore').value;
 
-            dataSet.forEach(item => {
-                const row = document.createElement('tr');
-                for (let key in item) {
-                    const td = document.createElement('td');
-                    td.innerText = item[key];
-                    row.appendChild(td);
-                }
-                table.appendChild(row);
-            });
+      // Data to send
+      var formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('learnerCode', learnerCode);
+      formData.append('score', score);
 
-            return table;
-        }
-    </script>
+      // Sending data to Google Sheets
+      fetch('https://script.google.com/macros/s/AKfycbydA0-XIneVPgkMeasUzjR_bhyiDEL5xyXMsEb_DYN9QVHFEfQiPcrmSElNZwi_rpgM/exec', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert(data); // Display success message
+        document.getElementById('marksheet').style.display = 'none';
+        document.getElementById('studentRecords').style.display = 'block';
+      })
+      .catch(error => alert('Error saving data: ' + error));
+    });
+    
+    
+    // Page load hone par
+const siteOpenedTime = localStorage.getItem('siteOpenedTime');
+const now = Date.now();
 
+if (siteOpenedTime) {
+    const openedAt = parseInt(siteOpenedTime, 10);
+    const diffInMinutes = (now - openedAt) / (1000 * 60); // ms to minutes
+
+    if (diffInMinutes < 30) {
+        // 30 minutes complete nahi hue
+        document.body.innerHTML = "<h2>Sorry! Aap abhi site use nahi kar sakte. 30 minutes ka wait karein.</h2>";
+    } else {
+        // 30 minutes ho gaye, naya time save karo
+        localStorage.setItem('siteOpenedTime', now.toString());
+        // Site normal chalegi
+    }
+} else {
+    // First time visit
+    localStorage.setItem('siteOpenedTime', now.toString());
+    // Site normal chalegi
+}
+    
+    
+  </script>
+  <script>
+    // Disable text selection
+  document.addEventListener('selectstart', function(e) {
+      e.preventDefault();
+  });
+  
+  // Disable right-click
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  });
+  
+  // Disable drag events (to prevent dragging content)
+  document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+  });
+  </script>
 </body>
 </html>
