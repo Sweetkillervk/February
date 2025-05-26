@@ -7,7 +7,7 @@ const quizData =
     b: "ऑपरेटिंग सिस्टम",
     c: "एप्लिकेशन सॉफ्टवेयर",
     d: "गेमिंग सॉफ्टवेयर",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Home Tab में 'Bold' का शॉर्टकट क्या है?",
@@ -15,7 +15,7 @@ const quizData =
     b: "Ctrl + U",
     c: "Ctrl + B",
     d: "Ctrl + L",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "MS Word में टेक्स्ट को इटैलिक करने का शॉर्टकट क्या है?",
@@ -23,7 +23,7 @@ const quizData =
     b: "Ctrl + I",
     c: "Ctrl + U",
     d: "Ctrl + E",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "'Justify' alignment किस शॉर्टकट से होता है?",
@@ -31,7 +31,7 @@ const quizData =
     b: "Ctrl + E",
     c: "Ctrl + J",
     d: "Ctrl + L",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Home Tab में कौन-सा ग्रुप फॉन्ट साइज़ को नियंत्रित करता है?",
@@ -39,7 +39,7 @@ const quizData =
     b: "Paragraph",
     c: "Clipboard",
     d: "Font",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "Bullets किस ग्रुप में पाए जाते हैं?",
@@ -47,7 +47,7 @@ const quizData =
     b: "Paragraph",
     c: "Font",
     d: "Editing",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Underline करने का शॉर्टकट क्या है?",
@@ -55,7 +55,7 @@ const quizData =
     b: "Ctrl + I",
     c: "Ctrl + U",
     d: "Ctrl + T",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Text को Highlight करने का विकल्प किस ग्रुप में होता है?",
@@ -63,7 +63,7 @@ const quizData =
     b: "Paragraph",
     c: "Editing",
     d: "Styles",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "'Cut' करने का शॉर्टकट क्या है?",
@@ -71,7 +71,7 @@ const quizData =
     b: "Ctrl + V",
     c: "Ctrl + X",
     d: "Ctrl + Z",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Home Tab में 'Styles' का मुख्य उद्देश्य क्या है?",
@@ -79,7 +79,7 @@ const quizData =
     b: "Text formatting",
     c: "Formatting consistency",
     d: "Undo और Redo करना",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Text को 'Center Align' करने के लिए किस शॉर्टकट का प्रयोग होता है?",
@@ -87,7 +87,7 @@ const quizData =
     b: "Ctrl + E",
     c: "Ctrl + L",
     d: "Ctrl + R",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Copy करने के लिए शॉर्टकट क्या है?",
@@ -95,7 +95,7 @@ const quizData =
     b: "Ctrl + C",
     c: "Ctrl + V",
     d: "Ctrl + Z",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Redo करने का शॉर्टकट क्या है?",
@@ -103,7 +103,7 @@ const quizData =
     b: "Ctrl + Y",
     c: "Ctrl + R",
     d: "Ctrl + T",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Text का रंग बदलने का विकल्प कहाँ होता है?",
@@ -111,7 +111,7 @@ const quizData =
     b: "Font",
     c: "Styles",
     d: "Editing",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Clipboard में कुल कितने आइटम स्टोर हो सकते हैं?",
@@ -119,7 +119,7 @@ const quizData =
     b: "24",
     c: "36",
     d: "48",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Text को 'Left Align' करने का शॉर्टकट क्या है?",
@@ -127,7 +127,7 @@ const quizData =
     b: "Ctrl + L",
     c: "Ctrl + E",
     d: "Ctrl + J",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Insert Tab में किस विकल्प से चित्र जोड़ा जाता है?",
@@ -135,7 +135,7 @@ const quizData =
     b: "Picture",
     c: "Shapes",
     d: "WordArt",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Insert Tab में Page Number जोड़ने का विकल्प कहाँ होता है?",
@@ -143,7 +143,7 @@ const quizData =
     b: "Symbols",
     c: "Illustrations",
     d: "Pages",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "Header और Footer Insert Tab के किस ग्रुप में आते हैं?",
@@ -151,7 +151,7 @@ const quizData =
     b: "Tables",
     c: "Text",
     d: "Header & Footer",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "Insert Tab में कौन-सा विकल्प SmartArt जोड़ने के लिए होता है?",
@@ -159,7 +159,7 @@ const quizData =
     b: "Illustrations",
     c: "Text",
     d: "Links",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "WordArt Insert करने का विकल्प किस ग्रुप में है?",
@@ -167,7 +167,7 @@ const quizData =
     b: "Symbols",
     c: "Text",
     d: "Links",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Hyperlink जोड़ने का विकल्प कौन-सा है?",
@@ -175,7 +175,7 @@ const quizData =
     b: "Links",
     c: "Tables",
     d: "Media",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Bookmark जोड़ने का विकल्प कहाँ होता है?",
@@ -183,7 +183,7 @@ const quizData =
     b: "Links",
     c: "Media",
     d: "Text",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Cover Page किस ग्रुप में पाया जाता है?",
@@ -191,7 +191,7 @@ const quizData =
     b: "Tables",
     c: "Text",
     d: "Media",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "Shapes Insert करने के लिए किस ग्रुप का उपयोग होता है?",
@@ -199,7 +199,7 @@ const quizData =
     b: "Text",
     c: "Tables",
     d: "Pages",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "Table Insert करने का विकल्प कहाँ होता है?",
@@ -207,7 +207,7 @@ const quizData =
     b: "Tables",
     c: "Illustrations",
     d: "Text",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Insert Tab में 'Equation' और 'Symbol' किस ग्रुप में होते हैं?",
@@ -215,7 +215,7 @@ const quizData =
     b: "Symbols",
     c: "Media",
     d: "Links",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "Online Pictures जोड़ने का विकल्प कहाँ होता है?",
@@ -223,7 +223,7 @@ const quizData =
     b: "Links",
     c: "Text",
     d: "Pages",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "Insert Tab में किस ग्रुप में Chart जोड़ा जाता है?",
@@ -231,7 +231,7 @@ const quizData =
     b: "Text",
     c: "Media",
     d: "Tables",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "Insert Tab में Screenshot जोड़ने का विकल्प होता है:",
@@ -239,7 +239,7 @@ const quizData =
     b: "Tables",
     c: "Illustrations",
     d: "Media",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "Insert Tab में Video Insert करने का विकल्प किसमें होता है?",
@@ -247,7 +247,7 @@ const quizData =
     b: "Text",
     c: "Pages",
     d: "Illustrations",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "File Tab का मुख्य कार्य क्या है?",
@@ -255,7 +255,7 @@ const quizData =
     b: "Document प्रबंधन",
     c: "Spelling Check",
     d: "Table जोड़ना",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "File Tab में 'Save As' का कार्य क्या है?",
@@ -263,7 +263,7 @@ const quizData =
     b: "फाइल को नए नाम से सेव करना",
     c: "फाइल डिलीट करना",
     d: "फॉर्मेटिंग करना",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "File Tab में 'Print' का कार्य क्या है?",
@@ -271,7 +271,7 @@ const quizData =
     b: "Document preview",
     c: "Document को प्रिंट करना",
     d: "फॉर्मेटिंग करना",
-    correct: "C"
+    correct: "c"
   },
   {
     question: "File Tab में कौन-सा विकल्प हाल ही में खुले Documents को दिखाता है?",
@@ -279,7 +279,7 @@ const quizData =
     b: "Open",
     c: "Info",
     d: "Recent",
-    correct: "D"
+    correct: "d"
   },
   {
     question: "File Tab में 'New' का उपयोग होता है:",
@@ -287,7 +287,7 @@ const quizData =
     b: "नया Document बनाने के लिए",
     c: "Text को Delete करने के लिए",
     d: "फाइल को बंद करने के लिए",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "MS Word में फाइल को PDF में सेव करने के लिए कौन-सा विकल्प चुनते हैं?",
@@ -295,7 +295,7 @@ const quizData =
     b: "Share",
     c: "Save",
     d: "Info",
-    correct: "A"
+    correct: "a"
   },
   {
     question: "File Tab में 'Info' विकल्प किसके लिए उपयोग होता है?",
@@ -303,7 +303,7 @@ const quizData =
     b: "File Properties और Permissions के लिए",
     c: "Formatting के लिए",
     d: "Text Input के लिए",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "File Tab में 'Options' का उपयोग किसलिए होता है?",
@@ -311,7 +311,7 @@ const quizData =
     b: "Word Settings को बदलने के लिए",
     c: "Insert Image",
     d: "Hyperlink बनाने के लिए",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "File Tab में फाइल को क्लाउड में सेव करने का विकल्प क्या है?",
@@ -319,7 +319,7 @@ const quizData =
     b: "Share",
     c: "Save As",
     d: "Open",
-    correct: "B"
+    correct: "b"
   },
   {
     question: "MS Word को बंद करने का विकल्प कहाँ होता है?",
@@ -327,7 +327,7 @@ const quizData =
     b: "Home > Exit",
     c: "View > Quit",
     d: "Insert > Remove",
-    correct: "A"
+    correct: "a"
   }
 ];
 
